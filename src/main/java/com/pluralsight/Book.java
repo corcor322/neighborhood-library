@@ -8,13 +8,12 @@ public class Book {
     private boolean isCheckedOut = false;
     private String checkedOutTo = "N/A";
 
-    public Book(String title, String author, String callNumber, long isbn, boolean isCheckedOut, String checkedOutTo) {
+    public Book(String title, String author, String callNumber, long isbn, boolean isCheckedOut) {
         this.title = title;
         this.author = author;
         this.callNumber = callNumber;
         this.isbn = isbn;
         this.isCheckedOut = isCheckedOut;
-        this.checkedOutTo = checkedOutTo;
     }
 
     public String getTitle() {
