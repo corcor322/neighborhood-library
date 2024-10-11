@@ -6,29 +6,6 @@ public class Library {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("What would you like to do?:");
-        System.out.println("1. Show Available Books");
-        System.out.println("2. Show Checked Out Books");
-        System.out.println("3. Exit Program");
-
-        int input = scanner.nextInt(); //build home screen
-
-        if (input == 1) {
-            //display books not checked out
-            //prompt user to select book to checkout or return to homescreen
-            //if user wants to check out book ask for their name, then check book out
-            //x return to home screen
-        } else if (input == 2) {
-            //display all checked out books with id, title, isbn, and person who has book
-            //C- check in a book
-            //X- go back to home screen
-        } else if (input == 3) {
-            System.out.println("Goodbye!");
-        } else {
-            System.out.println("Sorry. That's not a valid option.");
-        }
-
-        //create book array
         Book[] books = new Book[20];
         //fill with +five books
         books[0] = new Book("The Great Gatsby",  1753488, "1982146702", false);
@@ -51,6 +28,34 @@ public class Library {
         books[17] = new Book("Sand Chronicles",  1753488, "978-1-4215-1477-2", false);
         books[18] = new Book("Code Geass: Lelouch of the Rebellion Vol. 8",  1753488, "978-160496205-5", false);
         books[19] = new Book("Girlfriends: The Complete Collection Vol. 2",  1753488, "978-1-937867-09-6", false);
+
+        System.out.println("What would you like to do?:");
+        System.out.println("1. Show Available Books");
+        System.out.println("2. Show Checked Out Books");
+        System.out.println("3. Exit Program");
+
+        int input = scanner.nextInt(); //build home screen
+
+        if (input == 1) {
+            for (Book i : books) {
+                System.out.println(i);
+            };
+            //display books not checked out
+            //prompt user to select book to checkout or return to homescreen
+            //if user wants to check out book ask for their name, then check book out
+            //x return to home screen
+        } else if (input == 2) {
+            //display all checked out books with id, title, isbn, and person who has book
+            //C- check in a book
+            //X- go back to home screen
+        } else if (input == 3) {
+            System.out.println("Goodbye!");
+        } else {
+            System.out.println("Sorry. That's not a valid option.");
+        }
+
+        //create book array
+
 
 
 

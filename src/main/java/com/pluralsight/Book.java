@@ -54,4 +54,9 @@ public class Book {
     public void setCheckedOutTo(String checkedOutTo) {
         this.checkedOutTo = checkedOutTo;
     }
+
+    public String toString() {
+        return "ID: " + id + ", Title: " + title + " ISBN: " + isbn;
+    }
+
 }
