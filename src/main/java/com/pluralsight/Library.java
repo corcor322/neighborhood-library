@@ -1,7 +1,17 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class Library {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("What would you like to do?:");
+        System.out.println("1. Show Available Books");
+        System.out.println("2. Show Checked Out Books");
+        System.out.println("3. Exit Program");
+
+        int input = scanner.nextInt(); //build home screen
 
         //create book array
         Book[] books = new Book[20];
@@ -29,10 +39,14 @@ public class Library {
 
 
 
-        //checkOut method to switch isCheckedOut from false to true
+        //public boolean checkOut() {
 
-        //checkIn method to switch isCheckedOut from true to false
+        }//checkOut method to switch isCheckedOut from false to true
 
-        //build home screen
-    }
-}
+        //public boolean checkIn() {
+
+        }//checkIn method to switch isCheckedOut from true to false
+
+
+
+
