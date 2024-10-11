@@ -2,16 +2,14 @@ package com.pluralsight;
 
 public class Book {
     private String title = "";
-    private String author ="";
-    private String callNumber = "";
-    private long isbn = 0;
+    private int id = 0;
+    private String isbn = "";
     private boolean isCheckedOut = false;
-    private String checkedOutTo = "N/A";
+    private String checkedOutTo = "";
 
-    public Book(String title, String author, String callNumber, long isbn, boolean isCheckedOut) {
+    public Book(String title, int id, String isbn, boolean isCheckedOut) {
         this.title = title;
-        this.author = author;
-        this.callNumber = callNumber;
+        this.id = id;
         this.isbn = isbn;
         this.isCheckedOut = isCheckedOut;
     }
@@ -24,27 +22,20 @@ public class Book {
         this.title = title;
     }
 
-    public String getAuthor() {
-        return author;
+
+    public int getId() {
+        return id;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getCallNumber() {
-        return callNumber;
-    }
-
-    public void setCallNumber(String callNumber) {
-        this.callNumber = callNumber;
-    }
-
-    public long getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(long isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
 
