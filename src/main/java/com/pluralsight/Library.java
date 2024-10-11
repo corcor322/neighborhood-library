@@ -13,6 +13,21 @@ public class Library {
 
         int input = scanner.nextInt(); //build home screen
 
+        if (input == 1) {
+            //display books not checked out
+            //prompt user to select book to checkout or return to homescreen
+            //if user wants to check out book ask for their name, then check book out
+            //x return to home screen
+        } else if (input == 2) {
+            //display all checked out books with id, title, isbn, and person who has book
+            //C- check in a book
+            //X- go back to home screen
+        } else if (input == 3) {
+            System.out.println("Goodbye!");
+        } else {
+            System.out.println("Sorry. That's not a valid option.");
+        }
+
         //create book array
         Book[] books = new Book[20];
         //fill with +five books
