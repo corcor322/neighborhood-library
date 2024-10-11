@@ -1,5 +1,5 @@
 package com.pluralsight;
-
+//TODO: checkIn/checkOut method, debug else, modify option 1, build option 2
 import java.util.Scanner;
 
 public class Library {
@@ -7,7 +7,7 @@ public class Library {
         Scanner scanner = new Scanner(System.in);
 
         Book[] books = new Book[20];
-        //fill with +five books
+        //fill with 20 books
         books[0] = new Book("The Great Gatsby",  1753488, "1982146702", false);
         books[1] = new Book("Les Miserables",  898776, "0449300021", false);
         books[2] = new Book("The Count of Monte Cristo",  23456760, "0486456439", false);
@@ -53,11 +53,7 @@ public class Library {
         } else {
             System.out.println("Sorry. That's not a valid option.");
         }
-
-        //create book array
-
-
-
+        
 
         //public boolean checkOut() {
 
